@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jumping Animation</title>
+  </head>
+  <body>
+    <style type="text/css">
+      .jumper
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      .jumper img
+      {
+        animation: jump 1s infinite;
+      }
+
+      @keyframes jump {
+        0%
+        {
+          content:url('sprites/0.png');
+        }
+
+        30%
+        {
+          content:url('sprites/1.png');
+        }
+
+        40%
+        {
+          content:url('sprites/2.png');
+        }
+
+        50%
+        {
+          content:url('sprites/3.png');
+        }
+
+        70%
+        {
+          content:url('sprites/4.png');
+        }
+
+        90%
+        {
+          content:url('sprites/5.png');
+        }
+      }
+    </style>
+  <div class="jumper">
+    <img src="sprites/0.png" alt="">
+  </div>
+  </body>
+</html>
